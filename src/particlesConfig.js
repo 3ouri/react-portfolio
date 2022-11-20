@@ -1,4 +1,7 @@
 export const particlesOptions = {
+    fullScreen: { 
+      enable: false
+    },
     particles: {
       links: {
         enable: true
