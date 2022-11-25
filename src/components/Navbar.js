@@ -8,9 +8,9 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-light nav-bg-color fixed-top">
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="https://3ouri.com">
           <img className="logo" src={logo} alt="logo" />
         </a>
         <button
@@ -30,7 +30,6 @@ const Navbar = () => {
             <li className="nav-item active">
               <Link smooth={true} to="home" offset={-110} className="nav-link" href="#">
                 Home
-                {/* <span className="sr-only">(current)</span> */}
               </Link>
             </li>
             <li className="nav-item">
@@ -39,8 +38,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="services" offset={-110} className="nav-link" href="#">
-                Services
+              <Link smooth={true} to="projects" offset={-110} className="nav-link" href="#">
+                Projects
               </Link>
             </li>
             <li className="nav-item">
@@ -49,8 +48,18 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="portfolio" offset={-110} className="nav-link" href="#">
-                Portfolio
+              <Link smooth={true} to="services" offset={-110} className="nav-link" href="#">
+                Skills
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link smooth={true} to="blog" offset={-110} className="nav-link" href="#">
+                Blog
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link smooth={true} to="testimonials" offset={-110} className="nav-link" href="#">
+                Testimonials
               </Link>
             </li>
             <li className="nav-item">

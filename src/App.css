@@ -3,7 +3,7 @@
 :root {
   --primary-white: #fff;
   --primary-light-gray: #f4f4f4;
-  --primary-gray: #ccd1d9;
+  --primary-gray: #b5bbc5;
   --primary-dark-gary: #666666;
   --primary-dark: rgb(52, 58, 64);
   --primary-orange: #DB772F;
@@ -24,6 +24,10 @@ body {
   width: 6rem;
 }
 
+.nav-bg-color {
+  background-color: #2b404e !important;
+}
+
 /* ----------- MENU LINKS --------------*/
 nav a.nav-link {
   letter-spacing: 0.0375rem;
@@ -38,7 +42,7 @@ nav ul li {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white) !important;
-  border-top: 0.1875rem solid var(--primary-dark);
+  border-top: 0.1875rem solid var(--primary-dark-gary);
 }
 
 .navbar-brand {
@@ -150,60 +154,117 @@ nav ul li {
   }
 }
 
-/***************** SERVICES ***************************/
-.services {
-  text-align: center;
-  padding-bottom: 2rem;
+/***************** Projects ***************************/
+.projects-wrapper {
   background-color: var(--primary-light-gray);
+  padding: 3rem 0;
 }
 
-.services h1 {
+.projects-wrapper h1 {
   color: var(--primary-dark);
-  text-transform: uppercase;
 }
 
-.services .circle {
+.projects-image {
+  width: 15rem;
+  border: 1px solid var(--primary-orange);
+  padding: 0 0.5rem;
+}
+
+.projects-image-box {
   position: relative;
-  margin: 0.375rem auto;
-  background-color: var(--primary-orange);
-  border-radius: 50%;
-  width: 3.125rem;
-  height: 3.125rem;
+  margin: 1rem;
 }
 
-.services .icon {
-  font-size: 1.4rem;
-  color: var(--primary-white);
+/*---------------- OVERFLOW BOX ------------------*/
+.overflow {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: var(--primary-black);
+  width: 15rem;
+  height: 8rem;
+  top: 0;
+  border: 1px solid var(--primary-red);
+  cursor: pointer;
 }
 
-.services .box {
-  height: 16rem;
-  border-bottom: 0.3125rem solid var(--primary-orange);
-  padding: 0.625rem;
-  margin-bottom: 1.875rem;
-  background-color: var(--primary-white);
+.projects-image-box:hover .overflow {
+  opacity: 60%;
   transition: 0.3s ease-in-out;
 }
 
-.services .box:hover {
-  background-color: var(--primary-orange);
-  border-bottom: 0.3125rem solid var(--primary-dark);
+.projects-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -8rem;
+  margin-top: 3.6rem;
+  color: var(--primary-orange);
+  font-size: 1.5rem;
 }
 
-.services .box:hover .icon {
-  color: var(--primary-dark);
+.projects-image-box:hover .projects-icon {
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.services .box:hover .circle {
-  background-color: var(--primary-white);
+/*---------------- OVERFLOW BOX ------------------*/
+.popupbox-wrapper {
+  margin-top: 5rem;
 }
 
-.services .box:hover p, .services .box:hover h3 {
-  color: var(--primary-white);
+.projects-image-popupbox {
+  width: 45rem;
+  padding: 0 0.5rem;
+  border: 1px solid black;
+}
+
+.popupbox-content p {
+  padding-top: 1rem;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: var(--primary-orange);
+
+}
+
+.hyper-link:hover {
+  color: var(--primary-red);
+  
+}
+
+/*---------------- MEDIA ------------------*/
+@media(max-width: 768px) {
+  .projects-image-popupbox {
+    width: 100%;
+  }
+}
+
+@media(max-height: 500px) {
+  .popupbox-wrapper {
+    height: 100%;
+  }
+
+  .projects-image-popupbox {
+    width: 50%;
+  }
+}
+
+@media(max-height: 28px) {
+  .popupbox-wrapper {
+    height: 90%;
+  }
+
+  .projects-image-popupbox {
+    width: 30%;
+  }
+}
+
+@media(max-width: 912px) {
+
+  .projects-image-popupbox {
+    width: 100%;
+  }
 }
 
 /***************** EXPERIENCE ***************************/
@@ -296,23 +357,79 @@ nav ul li {
 
 }
 
-/***************** Portfolio ***************************/
-.portfolio-wrapper {
+/***************** SERVICES ***************************/
+.services {
+  text-align: center;
+  padding-bottom: 2rem;
   background-color: var(--primary-light-gray);
+}
+
+.services h1 {
+  color: var(--primary-dark);
+  text-transform: uppercase;
+}
+
+.services .circle {
+  position: relative;
+  margin: 0.375rem auto;
+  background-color: var(--primary-orange);
+  border-radius: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.services .icon {
+  font-size: 1.4rem;
+  color: var(--primary-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.services .box {
+  height: 16rem;
+  border-bottom: 0.3125rem solid var(--primary-orange);
+  padding: 0.625rem;
+  margin-bottom: 1.875rem;
+  background-color: var(--primary-white);
+  transition: 0.3s ease-in-out;
+}
+
+.services .box:hover {
+  background-color: var(--primary-orange);
+  border-bottom: 0.3125rem solid var(--primary-dark);
+}
+
+.services .box:hover .icon {
+  color: var(--primary-dark);
+}
+
+.services .box:hover .circle {
+  background-color: var(--primary-white);
+}
+
+.services .box:hover p, .services .box:hover h3 {
+  color: var(--primary-white);
+}
+
+/***************** Blog ***************************/
+.blog-wrapper {
+  background-color: var(--primary-white);
   padding: 3rem 0;
 }
 
-.portfolio-wrapper h1 {
+.blog-wrapper h1 {
   color: var(--primary-orange);
 }
 
-.portfolio-image {
+.blog-image {
   width: 15rem;
   border: 1px solid var(--primary-orange);
   padding: 0 0.5rem;
 }
 
-.portfolio-image-box {
+.blog-image-box {
   position: relative;
   margin: 1rem;
 }
@@ -329,12 +446,12 @@ nav ul li {
   cursor: pointer;
 }
 
-.portfolio-image-box:hover .overflow {
+.blog-image-box:hover .overflow {
   opacity: 60%;
   transition: 0.3s ease-in-out;
 }
 
-.portfolio-icon {
+.blog-icon {
   position: absolute;
   opacity: 0;
   margin-left: -8rem;
@@ -343,7 +460,7 @@ nav ul li {
   font-size: 1.5rem;
 }
 
-.portfolio-image-box:hover .portfolio-icon {
+.blog-image-box:hover .blog-icon {
   opacity: 70%;
   transition: 0.3s ease-in-out;
   cursor: pointer;
@@ -354,9 +471,14 @@ nav ul li {
   margin-top: 5rem;
 }
 
-.portfolio-image-popupbox {
+.blog-image-popupbox {
   width: 45rem;
   padding: 0 0.5rem;
+  border: 1px solid black;
+}
+
+.popupbox-content p {
+  padding-top: 1rem;
 }
 
 .hyper-link {
@@ -372,7 +494,7 @@ nav ul li {
 
 /*---------------- MEDIA ------------------*/
 @media(max-width: 768px) {
-  .portfolio-image-popupbox {
+  .blog-image-popupbox {
     width: 100%;
   }
 }
@@ -382,7 +504,7 @@ nav ul li {
     height: 100%;
   }
 
-  .portfolio-image-popupbox {
+  .blog-image-popupbox {
     width: 50%;
   }
 }
@@ -392,14 +514,14 @@ nav ul li {
     height: 90%;
   }
 
-  .portfolio-image-popupbox {
+  .blog-image-popupbox {
     width: 30%;
   }
 }
 
 @media(max-width: 912px) {
 
-  .portfolio-image-popupbox {
+  .blog-image-popupbox {
     width: 100%;
   }
 }
@@ -416,7 +538,7 @@ nav ul li {
 }
 
 .testimonials h1 {
-  color: var(--primary-orange);
+  color: var(--primary-white);
   padding: 3rem 0;
   text-transform: uppercase;
 }
@@ -432,7 +554,7 @@ nav ul li {
   color: var(--primary-white);
   background: transparent;
   margin-top: -6%;
-  width: 54%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 6%;
@@ -470,7 +592,7 @@ nav ul li {
 
 /***************** CONTACTS ***************************/
 .contacts {
-  background-color: var(--primary-dark);
+  background-color: var(--primary-white);
   padding: 3rem 0;
 }
 
@@ -481,7 +603,7 @@ nav ul li {
 }
 
 .contacts p {
-  color: var(--primary-gray);
+  color: var(--primary-dark-gary);
   font-size: 1.2rem;
 }
 
@@ -494,11 +616,16 @@ nav ul li {
   border: 0;
   border-bottom: 0.125rem solid var(--primary-dark-gary);
   border-radius: 0;
-  color: var(--primary-gray);
+  color: var(--primary-dark-gary);
   outline: 0 !important;
   box-shadow: none !important;
   margin-bottom: 1rem;
   padding-left: 0 !important;
+}
+
+.contacts input::placeholder, .contacts textarea::placeholder {
+  color: var(--primary-gray);
+  opacity: 1; /* Firefox */
 }
 
 .contacts .container {
@@ -519,6 +646,7 @@ nav ul li {
   margin: 1rem 0 0 0;
   width: 100%;
   background: none;
+  color: var(--primary-dark-gary);
 }
 
 .line {
