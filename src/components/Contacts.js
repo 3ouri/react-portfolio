@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import axios from "axios";
 
 const Contacts = () => {
   const [successMessage, setSuccessMessage] = useState("");
@@ -7,6 +8,30 @@ const Contacts = () => {
 
   const onSubmit = (data, r) => {
     console.log("sending email functionality");
+    console.log(JSON.stringify(data));
+
+    const correctData = {};
+    correctData.GuestName = data.name;
+    correctData.Email = data.email;
+    correctData.Phone = data.phone;
+    correctData.MessageTitle = data.subject;
+    correctData.Message = data.message;
+
+    console.log(correctData);
+
+    axios
+      .post(
+        "https://n39s5bi795.execute-api.us-east-1.amazonaws.com/v1/contact",
+        correctData
+      )
+      .then(
+        (response) => {
+          console.log("Response: " + JSON.stringify(response));
+        },
+        (error) => {
+          console.log("Error " + error);
+        }
+      );
 
     setSuccessMessage("Form sent successfully! I will contact you shortly.");
 
@@ -57,9 +82,9 @@ const Contacts = () => {
                   ref={register({
                     required: "Please enter your email",
                     pattern: {
-                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                        message: "Invalid email format"
-                    }
+                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                      message: "Invalid email format",
+                    },
                   })}
                 />
                 <div className="line"></div>
@@ -74,6 +99,8 @@ const Contacts = () => {
                   className="form-control"
                   placeholder="Phone Number (Optional)"
                   name="phone"
+                  ref={register({
+                  })}
                 />
                 <div className="line"></div>
               </div>
@@ -95,13 +122,13 @@ const Contacts = () => {
               </span>
             </div>
             <div className="col-md-6 col-xs-12">
-              {/* Description INPUT */}
+              {/* Message INPUT */}
               <div className="text-center">
                 <textarea
                   type="text"
                   className="form-control"
-                  placeholder="Please describe shortly your project..."
-                  name="description"
+                  placeholder="Please describe shortly your concern..."
+                  name="message"
                   ref={register({
                     required:
                       "Please don't forget to describe your project needs!",
@@ -110,7 +137,7 @@ const Contacts = () => {
                 <div className="line"></div>
               </div>
               <span className="error-message">
-                {errors.description && errors.description.message}
+                {errors.message && errors.message.message}
               </span>
               <button className="btn-main-offer contact-btn" type="submit">
                 Contact Me

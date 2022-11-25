@@ -8,10 +8,11 @@ import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Services from "./components/Services";
 import Experience from "./components/Experience";
-import Portfolio from "./components/Portfolio";
+import Projects from "./components/Projects";
 import Testimonials from "./components/Testimonials";
 import Contacts from "./components/Contacts"
 import Footer from "./components/Footer"
+import Blog from "./components/Blog";
 
 function App() {
   const particlesInit = (engine) => {
@@ -24,9 +25,10 @@ function App() {
       <Particles className="tsparticles" init={particlesInit} options={particlesOptions} />
       <Header />
       <AboutMe />
-      <Services />
+      <Projects />
       <Experience />
-      <Portfolio />
+      <Services />
+      <Blog />
       <Testimonials />
       <Contacts />
       <Footer />

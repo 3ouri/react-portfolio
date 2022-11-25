@@ -2,29 +2,32 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 // AVATRAS IMPORTS
-import avatar1 from "../images/avatars/avatar-1.png";
-import avatar2 from "../images/avatars/avatar-2.png";
-import avatar3 from "../images/avatars/avatar-3.png";
-import avatar4 from "../images/avatars/avatar-4.png";
+import avatar1 from "../images/testimonials/moh_mihyar.jfif";
+import avatar2 from "../images/testimonials/hisham_ahmad.jfif";
+import avatar3 from "../images/testimonials/firas_kamal.jfif";
 
 const TestimonialsCarousel = () => {
   return (
     <div>
       <Carousel
-      showArrows={true}
-      infiniteLoop={true}
-      showThumbs={false}
-      showStatus={false}
-      autoPlay={true}
-      interval={3000}>
+        showArrows={true}
+        infiniteLoop={true}
+        showThumbs={false}
+        showStatus={false}
+        autoPlay={true}
+        interval={3000}
+      >
         <>
           <img src={avatar1} alt="Happy Client 1" />
           <div className="myCarousel">
-            <h3>Happy Client 1</h3>
+            <h3>Mohammad Mihyar</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-              maxime omnis illum perferendis repellat! Ipsum pariatur recusandae
-              minus impedit architecto.
+              I had the distinct pleasure of working with Abdallah for Two years
+              at ESKADENIA Software, collaborating on several project teams.
+              Abdallah made sure everyone of the team left with a smile with his
+              great spirit. His positive approach and attention to details make
+              him a welcome addition to any team. I can thoroughly recommend
+              Abdallah to you.
             </p>
           </div>
         </>
@@ -32,11 +35,11 @@ const TestimonialsCarousel = () => {
         <>
           <img src={avatar2} alt="Happy Client 2" />
           <div className="myCarousel">
-            <h3>Happy Client 2</h3>
+            <h3>Hisham Ahmad</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-              maxime omnis illum perferendis repellat! Ipsum pariatur recusandae
-              minus impedit architecto.
+              I have worked with Abdallah for two years, he dedicate himself to
+              achieve his goals, never gives up, team player willing to help
+              anyone in order to get things done.
             </p>
           </div>
         </>
@@ -44,23 +47,11 @@ const TestimonialsCarousel = () => {
         <>
           <img src={avatar3} alt="Happy Client 3" />
           <div className="myCarousel">
-            <h3>Happy Client 3</h3>
+            <h3>Firas Kamal</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-              maxime omnis illum perferendis repellat! Ipsum pariatur recusandae
-              minus impedit architecto.
-            </p>
-          </div>
-        </>
-
-        <>
-          <img src={avatar4} alt="Happy Client 4" />
-          <div className="myCarousel">
-            <h3>Happy Client 4</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-              maxime omnis illum perferendis repellat! Ipsum pariatur recusandae
-              minus impedit architecto.
+              Abdallah is a very hard worker, treats people nicely and you can
+              depend on him when needed. He is smart and fast learner and a
+              delightful person to be around. It is a joy to work with him.
             </p>
           </div>
         </>
