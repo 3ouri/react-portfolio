@@ -123,12 +123,6 @@ nav ul li {
   z-index: 1;
 }
 
-@media(max-width: 768px) {
-  .tsparticles {
-    display: none;
-  }
-}
-
 /***************** ABOUT ME ***************************/
 .photo-wrapper {
   display: flex;
@@ -561,7 +555,7 @@ nav ul li {
   padding-bottom: 8%;
   padding-left: 5%;
   padding-right: 5%;
-  height: 17.875rem;
+  /*height: 17.875rem;*/
 }
 
 .myCarousel h3 {
@@ -588,6 +582,23 @@ nav ul li {
 .carousel-root {
   margin: auto !important;
   margin-top: 3% !important; 
+}
+
+/*---------------- MEDIA ------------------*/
+@media(max-width: 768px){
+  .myCarousel h3 {
+    font-size: 1rem;
+  }
+
+  .carousel .slide img {
+    width: 5rem !important;
+    border-radius: 50%;
+  }
+
+  .myCarousel p {
+    color: var(--primary-gray);
+    font-size: 0.8rem;
+  }
 }
 
 /***************** CONTACTS ***************************/

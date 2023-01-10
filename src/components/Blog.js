@@ -59,7 +59,7 @@ const Blog = () => {
         <b>Document: </b>
         <a
           className="hyper-link"
-          onClick={() => window.open("https://3ouri.com/Amazon%20ElastiCache%20for%20Redis.pdf")}
+          onClick={() => window.open("/Amazon%20ElastiCache%20for%20Redis.pdf")}
         >
           Amazon ElastiCache for Redis
         </a>

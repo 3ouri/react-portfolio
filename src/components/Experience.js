@@ -4,17 +4,20 @@ const Experience = () => {
   return (
     <div id="experience" className="experience">
       <div className="d-flex justify-content-center my-5">
-        <h1>Eperience</h1>
+        <h1>Experience</h1>
       </div>
       <div className="container experience-wrapper">
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>MIU (Mar. 2022 - Present)</h3>
+            <h3>Maharishi International University (Mar. 2022 - Dec. 2022)</h3>
             <h4>Instructor of Computer Science</h4>
-            <p>
-               Working as Instructor of Computer Science at Maharishi Internation University (to be updated soon).
-            </p>
+            <output>Provide instruction and guidance to students to maximize performance in computer science courses.</output>
+            <output>•	Build the development environment for students to implement projects.</output>
+            <output>•	Review student code for lab work and projects.</output>
+            <output>•	Design database schema for students to follow on.</output>
+            <output>•	Assist professors in assigning and grading exam questions.</output>
+            <output><i><b>Technologies Used:</b> Java, Spring (Boot, Core, MVC, Security, Data, Batch, AOP, Dependency Injection), Microservices, Eclipse, MySQL, MongoDB, Git, GitHub.</i></output>
           </div>
         </div>
 
@@ -23,13 +26,12 @@ const Experience = () => {
           <div className="timeline-content">
             <h3>ArabiaCell (Jan. 2020 - Dec. 2021)</h3>
             <h4>Senior Java Developer</h4>
-            <p>
-            Played a main role in building a company's product from scratch, the "Notification Center", which is responsible for handling SMS, WhatsApp and Push Notifications, including account management. This system was built using the latest technologies and frameworks, such as Spring Boot, Spring MVC, Spring Security, Thymeleaf, RESTful, MongoDB and Redis.
-- Continuous research on new technologies and frameworks, including proof of concepts, required configurations, and security aspects.
-- Supervised and mentored junior colleagues to develop their skills and accomplish tasks as per the company business needs.
-- Managed deployment and version control on Git repositories (Development, Staging and Live).
-- Played a role in easing technical communications between business teams and outsourced developers for an existing eCommerce system.
-            </p>
+            <output>Led development of Notification Center to handle SMS, WhatsApp, and Push notifications by implementing latest technologies and Frameworks.</output>
+            <output>•	Conducted continuous research on new technologies and Frameworks including proof of concepts, configurations, and security aspects.</output>
+            <output>•	Mentored and coached junior colleagues in enhancing development skills and achieving tasks based on business needs.</output>
+            <output>•	Managed deployment and version control of Git Repositories.</output>
+            <output>•	Contributed to streamlining technical communications between business teams and outsourced developers of existing eCommerce system.</output>
+            <output><i><b>Technologies Used:</b> Java, Microservices, Spring (Boot, Core, MVC, Security, Data, Batch, AOP, Dependency Injection), HTML, CSS, JavaScript, jQuery, Thymeleaf, MySQL, Eclipse, Navicat, Trello, XHTML, JPA, Hibernate, REST APIs, Maven, MongoDB, Redis Cache, Git, GitLab.</i></output>
           </div>
         </div>
 
@@ -38,19 +40,13 @@ const Experience = () => {
           <div className="timeline-content">
             <h3>ESKADENIA Software (Sep. 2018 - Jan. 2020)</h3>
             <h4>Technical Team Leader</h4>
-            <p>
-            Prepare and handle the Work Breakdown Structure (WBS) for provided project scope.
-- Design the modules architecture according to the business requirements.
-- Design the database structure and reflect changes to the ERD.
-- Define the roles of the team members according to the plan.
-- Meet the development team to discuss the technical aspects and the planned architecture of the project.
-- Study and design the Solution Architecture of the project.
-- Prepare and modify the Software Architecture Specification and other Architecture documents of the project.
-- Review business and design documents to verify the project technical flow.
-- Supervised and mentored junior and senior colleagues to develop their skills and accomplish tasks as per the company's business needs.
-- Continuous significant participation in the CMMI Committee to achieve CMMI Level 5.
-- Had a significant role in the Social Committee Group.
-            </p>
+            <output>Developed module architecture and database structure according to business requirements.</output>
+            <output>•	Led team by defining team roles, handling Work Breakdown Structure according to project scope, and determining technical aspects and planned architecture for projects.</output>
+            <output>•	Designed solution architecture and modified Software Architecture Specification and other documentation for project.</output>
+            <output>•	Contributed to CMMI Committee to achieve CMMI Level 5.</output>
+            <output>•	Analyzed business and design documents to verify technical flow.</output>
+            <output>•	Supported colleagues in enhancing skills and completing tasks based on business needs.</output>
+            <output><i><b>Technologies Used:</b> Java, HTML, CSS, JavaScript, jQuery, Oracle Database, MySQL, Eclipse, Toad for Oracle, TFS, JSP, JSF, EclipseLink, SOAP, JPA, Servlets, Maven, Gradle, JFrog.</i></output>
           </div>
         </div>
 
@@ -59,18 +55,12 @@ const Experience = () => {
           <div className="timeline-content">
             <h3>ESKADENIA Software (Oct. 2016 - Aug. 2018)</h3>
             <h4>Senior Java Developer</h4>
-            <p>
-            Spearheaded development and design of various web-based applications.
-- Supported all phases of software development life cycle from requirements gathering and analysis to application testing and deployment.
-- Administered database design and management.
-- Implemented a PaymentHub system to integrate with Payment Gateway APIs such as; HyperPay and eFAWATEERcom.
-- Experience of working on the Smart SIM Registration System.
-- Apply the work according to the company's process and CMMI rules.
-- Mentored junior colleagues to develop their skills and accomplish tasks as per the company business needs.
-- Coached newly hired employees.
-- Became part of the CMMI Committee.
-- Had a significant role in the Social Committee Group.
-            </p>
+            <output>Developed and implemented numerous web-based applications while supporting all phases of software development life cycle according to CMMI rules.</output>
+            <output>•	Designed and administered database.</output>
+            <output>•	Integrated Payment Gateway APIs with PaymentHub System.</output>
+            <output>•	Contributed to development and maintenance of Smart SIM Registration System.</output>
+            <output>•	Mentored new hires and junior colleagues in advancing their professional development.</output>
+            <output><i><b>Technologies Used:</b> Java, HTML, CSS, JavaScript, jQuery, Oracle Database, MySQL, Eclipse, Toad for Oracle, TFS, JSP, JSF, EclipseLink, SOAP, JPA, Servlets, Maven, Gradle, JFrog.</i></output>
           </div>
         </div>
 
@@ -79,18 +69,12 @@ const Experience = () => {
           <div className="timeline-content">
             <h3>ESKADENIA Software (Jul. 2012 - Apr. 2015)</h3>
             <h4>Java Developer</h4>
-            <p>
-            Spearheaded development and design of various web-based applications.
-- Supported all phases of software development life cycle from requirements gathering and analysis to application testing and deployment.
-- Administered database design and management.
-- Implemented a PaymentHub system to integrate with Payment Gateway APIs such as; HyperPay and eFAWATEERcom.
-- Experience of working on the Smart SIM Registration System.
-- Apply the work according to the company's process and CMMI rules.
-- Mentored junior colleagues to develop their skills and accomplish tasks as per the company business needs.
-- Coached newly hired employees.
-- Became part of the CMMI Committee.
-- Had a significant role in the Social Committee Group.
-            </p>
+            <output>Created web application to use in conjunction with a mobile application to calculate mobile data consumption based on operator’s policy.</output>
+            <output>•	Managed project structure, business development, and database structure for content management system with mobile application viewing.</output>
+            <output>•	Analyzed requirements to maximize development of application to calculate life insurance quotes.</output>
+            <output>•	Performed backend programming and database manipulation.</output>
+            <output>•	Implemented unit tests and application deployment.</output>
+            <output><i><b>Technologies Used:</b> Java, HTML, CSS, JavaScript, jQuery, Oracle Database, SQLite, Eclipse, Toad for Oracle, Microsoft VSS, JSP, JSF, EclipseLink, SOAP, JPA, JDBC, Servlets, Maven.</i></output>
           </div>
         </div>
       </div>
